@@ -1,0 +1,81 @@
+:root { 
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-style: normal
+ }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Scrollbar for cart container */
+.cart-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cart-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.cart-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.cart-container::-webkit-scrollbar-thumb:active {
+  background: #555;
+}
+
+.cart-container::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 8px;
+}
+
+.cart-container::-webkit-scrollbar-thumb:vertical {
+  height: 30px;
+}
+
+
+
+/* Scrollbar for cart container */
+.location::-webkit-scrollbar {
+  width: 5px;
+}
+
+.location::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.location::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.location::-webkit-scrollbar-thumb:active {
+  background: #555;
+}
+
+.location::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 8px;
+}
+
+.location::-webkit-scrollbar-thumb:vertical {
+  height: 30px;
+}
+
+
+
+/* Add styles for dark mode */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Add styles for light mode */
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+}
