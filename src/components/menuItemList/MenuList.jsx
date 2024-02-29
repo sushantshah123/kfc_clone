@@ -14,7 +14,7 @@ const MenuList = () => {
     : "text-textColor-dark";
   return (
     <div
-      className={`${backgroundColorClass} ${textColorClass}flex flex-row flex-wrap md:flex-col gap-4 justify-start items-start p-3 md:w-1/4 w-full`}
+      className={`${backgroundColorClass} ${textColorClass}flex flex-row flex-wrap md:flex-col gap-4 justify-start items-start p-3 md:w-1/4 w-full ease-in-out duration-500`}
     >
       {MenuItems.map((item) => (
         <div

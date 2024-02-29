@@ -39,7 +39,7 @@ const LoginForm = ({ setToggleLogin, toggleLogin }) => {
   return (
     toggleLogin && (
       <div className="w-screen h-screen bg-opacity-70 z-50 fixed top-0 bottom-0 left-0 bg-black overflow-auto">
-        <div className={` ${backgroundColorClass} ${textColorClass} w-5/6 md:w-1/3 h-auto absolute mt-24 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2`}>
+        <div className={` ${backgroundColorClass} ${textColorClass} w-5/6 md:w-1/3 h-auto absolute mt-24 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ease-in-out duration-500`}>
           <div className="p-6 rounded-md z-50 overflow-y-auto">
             <div className="flex justify-between items-center mb-2">
               <h2 className="font-bold text-lg md:xl">LOGIN ACCOUNT</h2>

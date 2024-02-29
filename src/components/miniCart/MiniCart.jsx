@@ -25,7 +25,7 @@ const MiniCart = ({ setMiniCart }) => {
   const navigate = useNavigate();
   return (
     <>
-      <div className={`${isDarkMode ? "bg-black" : "bg-gray-300"} w-[350px] md:w-[300px] p-3 flex flex-col gap-6`}>
+      <div className={`${isDarkMode ? "bg-black" : "bg-gray-300"} w-[350px] md:w-[300px] p-3 flex flex-col gap-6 ease-in-out duration-500`}>
         {cart.items.length >= 1 ? (
           <>
             <div className={`flex flex-col gap-4 p-2`}>
@@ -61,7 +61,7 @@ const MiniCart = ({ setMiniCart }) => {
                   <p>NRS. 999</p>
                 </div>
                 <div className="flex justify-between items-center">
-                  <h5 className="text-black">Total</h5>
+                  <h5 className="font-bold">Total</h5>
                   <p>NRS. 999</p>
                 </div>
               </div>

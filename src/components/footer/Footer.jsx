@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <>
       <div
-        className={`${backgroundColorClass} ${textColorClass} px-[5%] md:px-[10%]  py-4 md:p-6 font-semibold flex items-center flex-col gap-6`}>
+        className={`${backgroundColorClass} ${textColorClass} px-[5%] md:px-[10%]  py-4 md:p-6 font-semibold flex items-center flex-col gap-6 ease-in-out duration-500`}>
           <img
               src="https://1000logos.net/wp-content/uploads/2017/03/Kfc_logo.png"
               alt="Logo"

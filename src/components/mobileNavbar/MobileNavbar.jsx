@@ -29,7 +29,7 @@ const MobileNavbar = ({ toggleMenu, setToggleMenu }) => {
 
   return (
     toggleMenu && (
-      <div className="w-screen h-screen bg-opacity-70 z-50 fixed top-0 bottom-0 left-0 bg-black overflow-auto md:hidden">
+      <div className="w-screen h-screen bg-opacity-70 z-50 fixed top-0 bottom-0 left-0 bg-black overflow-auto md:hidden ease-in-out duration-500">
         <div
           className={` ${backgroundColorClass} ${textColorClass} w-2/3 h-auto absolute top-0 left-0 bottom-0`}
         >

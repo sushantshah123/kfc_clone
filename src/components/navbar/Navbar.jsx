@@ -47,7 +47,7 @@ const Navbar = () => {
   };
   return (
     <nav
-      className={`${backgroundColorClass} ${textColorClass} px-[5%] md:px-[10%] py-4 font-semibold sticky top-0 z-40`}
+      className={`${backgroundColorClass} ${textColorClass} px-[5%] md:px-[10%] py-4 font-semibold sticky top-0 z-40 ease-in-out duration-500`}
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* left  */}

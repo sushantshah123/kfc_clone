@@ -53,7 +53,7 @@ const CartItem = () => {
           <>
             <div className={`flex flex-col md:flex-row gap-4`}>
               {/* LEFT PART START  */}
-              <div className={` ${backgroundColorClass} ${textColorClass} md:w-2/3 rounded-sm p-3 flex flex-col gap-2 flex-shrink`}>
+              <div className={` ${backgroundColorClass} ${textColorClass} md:w-2/3 rounded-sm p-3 flex flex-col gap-2 flex-shrink ease-in-out duration-500`}>
                 <div className="flex justify-between items-center text-xl md:text-2xl font-medium">
                   <h5>Your Bucket</h5>
                   <h5>{cart.items.length} Items</h5>
@@ -112,7 +112,7 @@ const CartItem = () => {
               {/* LEFT PART END  */}
 
               {/* RIGHT PART START  */}
-              <div className={` ${backgroundColorClass} ${textColorClass} md:w-1/3 rounded-sm p-3 flex flex-col gap-2 h-[250px]`}>
+              <div className={` ${backgroundColorClass} ${textColorClass} md:w-1/3 rounded-sm p-3 flex flex-col gap-2 h-[250px] ease-in-out duration-500`}>
                 <h5 className="text-2xl font-medium">Order Summary</h5>
                 <div className="flex justify-between items-center">
                   <h4>Item Total</h4>
