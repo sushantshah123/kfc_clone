@@ -22,6 +22,12 @@ const MiniCart = ({ setMiniCart }) => {
     removeFromCart(itemId);
   };
 
+   // Calculate the total amount
+   const totalAmount = cart.items.reduce(
+    (acc, item) => acc + item.quantity * item.price,
+    0
+  );
+
   const navigate = useNavigate();
   return (
     <>
@@ -54,15 +60,15 @@ const MiniCart = ({ setMiniCart }) => {
               <div className="font-normal">
                 <div className="flex justify-between items-center">
                   <h5>Order Amount</h5>
-                  <p>NRS. 999</p>
+                  <p>NRS. {totalAmount}</p>
                 </div>
                 <div className="flex justify-between items-center">
                   <h5>Sub Total</h5>
-                  <p>NRS. 999</p>
+                  <p>NRS. {totalAmount}</p>
                 </div>
                 <div className="flex justify-between items-center">
                   <h5 className="font-bold">Total</h5>
-                  <p>NRS. 999</p>
+                  <p>NRS. {totalAmount}</p>
                 </div>
               </div>
             </div>
